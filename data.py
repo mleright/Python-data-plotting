@@ -9,21 +9,23 @@ XYZ = pd.read_csv('data.csv', sep=',')
 Time = XYZ['Time(s)']
 X = XYZ['LINEAR ACCELERATION X (m/s2)']
 Y = XYZ['LINEAR ACCELERATION Y (m/s2)']
-Z = XYZ['LINEAR ACCELERATION Z (m/s2)']
-
-plt.subplot(311)
-plt.plot(Time,X, 'b')
-
-plt.subplot(312)
-plt.plot(Time,Y, 'g')
-
-plt.subplot(313)
-plt.plot(Time,Z, 'r')
-
+Z = XYZ['LINEAR ACCELERATION Z (m/s2)'] 
 
 plt.xlabel('Time (s)')
 plt.ylabel('Acceleration (m/s^2)')
 plt.title('Acceleration vs. Time')
+
+plt.subplot(111)
+plt.plot(Time,X, 'b')
+
+plt.subplot(111)
+plt.plot(Time,Y, 'g')
+
+plt.subplot(111)
+plt.plot(Time,Z, 'r')
+
+
+
 
 
 
